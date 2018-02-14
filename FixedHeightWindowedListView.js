@@ -102,7 +102,8 @@ export default class FixedHeightWindowedListView extends Component {
         return (
             <ScrollView
                 scrollEventThrottle={50}
-                removeClippedSubviews={this.props.numToRenderAhead === 0 ? false : true}
+                removeClippedSubviews={false}
+                //removeClippedSubviews={this.props.numToRenderAhead === 0 ? false : true}
                 automaticallyAdjustContentInsets={false}
                 {...this.props}
                 ref={ref => {
