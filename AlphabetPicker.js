@@ -41,7 +41,7 @@ export default class AlphabetPicker extends Component {
 
                 this.tapTimeout = setTimeout(() => {
                     this._onTouchLetter(this._findTouchedLetter(gestureState.y0))
-                }, 100)
+                }, 10)
             },
             onPanResponderMove: (evt, gestureState) => {
                 clearTimeout(this.tapTimeout)
